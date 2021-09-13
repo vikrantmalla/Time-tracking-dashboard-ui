@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import './variable';
+@import './main';
+@import './container';
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flex(column,
+    center);
+    font-family: 'Rubik', sans-serif;
+    background-color: $ColorVerydarkblue;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+    text-decoration: none;
+}
